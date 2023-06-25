@@ -44,3 +44,18 @@ The CountryMapper class is our mapper class here. In this case, the input key is
 
 The TopCountryReducer class extends the Reducer class and reduces the intermediate key-value pairs to a final output. The input key is a Text object representing the season, and the input value is a Text object representing the country. The reducer counts the occurrences of each country for a given season and determines the top country based on the maximum count. It stores the top country for each season in a Map called topCountryMap. In the cleanup method, the top country for each season is outputted as the final result.
 In the end this program processes the hotel booking data, counts the occurrences of each country for each season, and determines the top country for each season based on the maximum count. The result is written to the output file.
+
+## Execution
+
+To execute the project, please follow the instructions below:
+
+1. Start Hadoop by running the command `./start-all.sh` in your terminal. Please note that you will need to have Hadoop installed on your system. If you haven't installed Hadoop yet, you can refer to this guide for instructions: Installing Hadoop on a Mac.
+2. Open your command prompt and navigate to the directory where you have unzipped the project folder. You can use the `cd` command to change directories.
+3. Use the `ls` command to list the files in the current directory and locate the script.sh file.
+4. Execute the script by running the command bash script.sh `your path to hotel-bookings.csv` `your path to customer-reservations.csv` `your output folder path to save final outputs`.
+5. Replace `your path to hotel-bookings.csv` with the actual file path to the hotel-booking.csv dataset file. (`../hotel-bookings.csv`)
+6. Replace `your path to customer-reservations.csv` with the actual file path to the customer-reservations.csv dataset file. (`../customer-reservations.csv`)
+7. Replace `your output folder path to save final outputs` with the actual folder path where you want to save the final output files. 
+8. Please make sure to provide correct file paths and ensure that specified output folder path exists.
+
+By following these instructions, you will be able to execute the project and generate the desired output files.
