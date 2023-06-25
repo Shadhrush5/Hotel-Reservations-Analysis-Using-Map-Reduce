@@ -1,0 +1,4 @@
+Winter	PRT
+Summer	PRT
+Fall	PRT
+Spring	PRT
